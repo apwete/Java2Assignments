@@ -1,0 +1,30 @@
+CIST 2372
+Java Programming II
+LAB #2 (30 Points)
+Swing GUIs
+Fall Semester 2014		
+
+
+
+Required:
+1.) Modify your Student GUI.  Add a TabbedPane to the StudentGUI.  The first
+Tab should be the same as #1 above.  The second Tab can have anything you want.
+Maybe just add one JLabel that says “Hello World”.
+
+2.) Add one PopUp Menu to your GUI App. You will have to research how to do this.
+
+
+Popup menu:
+	outside tab pane
+
+TabPane:
+	Tab1:
+		Top Panel:
+	
+		MIddle Panel: 
+			Make text fields global
+		
+		Bottom Panel:
+			make buttons global
+	Tab2:
+		Hello World

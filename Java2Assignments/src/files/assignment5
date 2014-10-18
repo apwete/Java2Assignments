@@ -1,0 +1,36 @@
+Lab #5 - Files in Java (end of Chap 14 and Chap 19) [30 Points]
+
+
+
+CIST 2372
+Java Programming II
+LAB #5 (30 Points)
+Writing to Files
+Fall Semester 2014
+
+
+1.) File Details – Build a class called FileDetails.java.  When you instantiate this class and 
+	give it a filename, it will report back the size of the file, whether the file is Readable 
+	and whether the file is Writeable; plus any other file information that you might deem 
+	important. 
+
+	This cd goes in main 
+	
+	FileDetails fd=newFileDetails(“anyfile.doc”); 
+	
+	All other code goes in the constructor.
+
+
+2.) Writing to a File – This time build a FileWrite.java.  This class, when instantiated, will 
+	create a new file and write a String to the file. This coed goes in main 
+
+	FileWrite fw = new FileWrite(“myfile.txt”, “Go Falcons”);   
+	
+	All other code goes in the constructor.
+
+
+3.) Reading from a File – This time build a class called FileRead.java.  This class, when 
+	instantiated, will read the text from a file and print the data to the Console.  This code 
+	goes in main FileRead fr = new FileRead(“myfile.txt”); 
+
+	All other code goes in the constructor.

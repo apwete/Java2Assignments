@@ -1,0 +1,17 @@
+CIST 2372
+Java Programming II
+LAB #8 – 30 Points
+DB Access
+Fall Semester 2014
+
+
+Assignment 1: 
+	Build a simple class called DBTester.java. This class should have only one 
+	method, main method.  In the main method you should read in all of the rows 
+	of data from the Instructors Table in the Registration Database, then print 
+	out this data.  Follow the steps outlined in class.  Remember to use 
+	try-catch blocks for all database access code.  The example in the book does
+	not use Try-catch blocks, but you should.
+
+
+ See page 1231 of your book for help!!!  Pg 1291 in 8th edition.

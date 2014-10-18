@@ -1,0 +1,58 @@
+CIST 2372
+Java Programming II
+LAB #1 (30 Points)
+Swing GUIs
+Fall Semester 2014
+
+
+In this lab, you will be working with SWING Components to build Simple GUIs. 
+
+REQUIRED:
+1.) Create a simple SWING Form to Display Student Data.  The top part of the
+form should say “Student Information”.  The middle part of the form will contain
+labels and textFields; one each for ID, FirstName, LastName, Email and GPA.  The
+bottom part should have 5 Buttons that read “Find”, “Insert”, “Delete”, “Update”
+and “Exit”.
+
+2.) Add a few neat SWING features, like tooltips, borders, colors, etc.  Also the
+Exit button should work and the “X” at the top right of the Window should also
+close the Application.  Make it so that when the User clicks on the Exit Button, a
+MessageBox Window popup and ask the User if they are sure that they want to exit. 
+If they say “Yes”, then Exit the App.  We learned about events last Semester.
+
+ 
+
+
+ StudentData  extend JFrame
+	main
+	this = Student GUI
+	FlowLayout
+	
+ topPanel  extend JPanel
+	Label = "Student Information"
+	
+ middlePanel  extend JPanel
+	Label/TextFields
+		ID
+		fName
+		lName
+		email
+		gpa
+	GridLayout
+	
+ bottomPanel  extend JPanel
+	Buttons
+		Find
+		Insert
+		Delete
+		Update
+		Exit
+	FlowLayout
+		
+
+
+Steps for EVENTS
+	Implement the listener
+	Register the component
+		ex. bt.addActionListener(this)
+	Write the code

@@ -1,0 +1,31 @@
+Lab #6 - Files Streams (Chap 19) [30 Points]
+
+
+
+CIST 2372
+Java Programming II
+LAB #6 (30 Points)
+Connecting Streams
+Fall Semester 2014
+
+1.) Write Integers to a File – This time build a class WriteInts.  This class, when instantiated, 
+	will create a new file and write an array of integers to this new file.  All the code to write 
+	the data to the file goes in the Constructor. 
+
+	[i.e.   // This code goes in main()
+	int myArr[] = {16, 31, 90, 45, 89};
+	 	WriteInts wi = new WriteInts(“mydata.dat”, myArr);   ]
+
+2.) Read Integers from a File – This time build a class ReadInts.  This class, when instantiated, 
+	will read the integers from the file given, and print them to the Console.  All the code to 
+	write the data to the file goes in the Constructor.
+
+	[i.e.   // This code goes in main()
+	 	ReadInts ri = new ReadInts(“mydata.dat”);     ]
+
+3.) Write a String to a File using PrintStream – This time build a class WriteString.  This class, 
+	when instantiated, will write a string to a file by using a PrintStream object connected to a 
+	FileOutputStream Object.
+	
+	[i.e. 	// This code goes in main()
+	WriteString ws = new WriteString(“f1.txt”,“Hello world”);]

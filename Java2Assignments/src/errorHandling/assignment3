@@ -1,0 +1,49 @@
+CIST 2372
+Java Programming II
+LAB #3(30 Points)
+Handling Exceptions
+Fall Semester 2014
+
+1.) Build a class called “TestExceptions.java”.  Put the following code in the main 
+method.
+
+int myArr = new int[10];
+int x,y,z;
+x=0;
+y=10;
+z=y/x;
+
+myArr[10] = 0;
+
+	What happens?
+	Now add try/catch blocks to catch these exceptions?
+	Is there another way that you can prevent a run-time error without
+		Using try-catch blocks?
+
+
+2.) Next build an Account class.  The Account class should have 3 Properties: Balance, 
+Owner and AcctNo.  The Account class should have 2 constructors, one that takes all 3 
+properties and one that takes no args(the default).   The Account class should have set
+and get methods as well as deposit and withdraw methods.  Also include a display() 
+method that outputs AcctNo, Owner and Balance. Use a main() method to test out this 
+class. 
+
+Use the following code, in the main method, to test the Account class?
+Account a1;
+a1 = new Account(2222, “Frank”, 1000);
+a1.deposit(100.00);
+a1.display();
+
+
+
+3.) Now in your Account main() method, attempt to withdraw more than the current 
+balance that is available.  What happens now?
+
+Use the following code to test the Account class?
+Account a1;
+a1 = new Account(2222, “Frank”, 500);
+a1.deposit(100.00);
+a1.withdraw(900.00);
+a1.display();
+
+	We will fix this problem in Lab #4.
