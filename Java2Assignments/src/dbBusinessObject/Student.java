@@ -24,80 +24,81 @@ public class Student {
 	
 	Student() {
 
-	} //Student(no args) constructor
+	} // end Student(no args) constructor
 	
 	Student(String fn, String ln, String street, String city, int zip, 
 			String email, int gpa) {
 
-	} //Student(all args) constructor
+	} // end Student(all args) constructor
 	
 	protected void getFirstName() {
 		System.out.println(fn);
-	} // get FirstName
+	} // end get FirstName
 
 	protected String setFirstName(String fn) {
 		this.fn = fn;
 		return fn;
-	} // setFirstName
+	} // end setFirstName
 	
 	protected void getLastName() {
 		System.out.println(ln);
-	} // getLastName
+	} // end getLastName
 
 	protected String setLastName(String ln) {
 		this.ln = ln;
 		return ln;
-	} // setLastName
+	} // end setLastName
 
 	protected void getStreet() {
 		System.out.println(street);
-	} // getStreet
+	} // end getStreet
 
 	protected String setStreet(String street) {
 		this.street = street;
 		return street;
-	} // setStreet
+	} // end setStreet
 
 	protected void getCity() {
 		System.out.println(city);
-	} // getCity
+	} // end getCity
 
 	protected String setCity(String city) {
 		this.city = city;
 		return city;
-	} // setCity
+	} // end setCity
 
 	protected void getZip() {
 		System.out.println(zip);
-	} // getZip
+	} // end getZip
 
 	protected int setZip(int zip) {
 		this.zip = zip;
 		return zip;
-	} // setZip
+	} // end setZip
 	
 	protected void getEmail() {
 		
 		System.out.println(email);
-	} // getEmail
+	} // end getEmail
 
 	protected String setEmail(String email) {
 		this.email = email;
 		return email;
 
-	} // setEmail
+	} // end setEmail
 
 	protected void getGPA() {
 		System.out.println(gpa);
-	} // getGPA
+	} // end getGPA
 
 	protected int setGPA(int gpa) {
 		this.gpa = gpa;
 		return gpa;
 
-	} // setGPA
+	} // end setGPA
 
 	public String toString() {
 		return "Need to finish toString()";
-	} // toString
-} // Student class
+	} // end toString
+	
+} // end Student class

@@ -26,16 +26,11 @@ import javax.swing.JTabbedPane;
 
 public class StudentData extends JFrame {
 	
-	Menu menu = new Menu();
 	TabbedPane tp = new TabbedPane();
 	
 	public StudentData(){
 		
-		JPanel p1 = new JPanel();
-		p1.setLayout( new BorderLayout());
-
-		add(p1, BorderLayout.NORTH);
-		add(tp, BorderLayout.CENTER);	
+		add(tp);
 	} // end StudentData constructor
 	
 	public static void main(String[] args) {

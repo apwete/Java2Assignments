@@ -21,6 +21,5 @@ public class Main {
 		student.getCity();
 		student.toString();
 		System.out.println("Running");
-	}
-
-}
+	} // end main class
+} // end Main class
