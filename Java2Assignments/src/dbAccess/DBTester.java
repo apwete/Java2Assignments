@@ -17,25 +17,20 @@ import java.sql.*;
 public class DBTester {
 
 	public static void main(String[] args) {
-		Connection conn = null;
-		
 		try{
-			
+			Connection conn = null;
+		
 			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 			conn = DriverManager.getConnection("jdbc:odbc:RegistrationDB");
+		
+			Statement statement = conn.createStatement();
+			ResultSet rs = statement.executeQuery("select firstname");
+		
+			while(rs.next()){
+				System.out.println(rs.getString(1));
+			} // end while
 			
-//			Class.forName("com.mysql.jdbc.Driver").newInstance();
-//			conn = DriverManager.getConnection("jdbc:mysql://localhost/Test");
-//			
-//		
-//			Statement statement = conn.createStatement();
-//			ResultSet rs = statement.executeQuery("select firstname");
-//		
-//			while(rs.next()){
-//				System.out.println(rs.getString(1));
-//			} // end while
-//			
-//			rs.close();
+			rs.close();
 			conn.close();
 		
 		}catch (ClassNotFoundException cnf) {
@@ -43,14 +38,7 @@ public class DBTester {
 		} 
 		catch(SQLException sql){
 			System.out.println(sql + "\t2");	
-		} 
-		
-//		catch (InstantiationException ie) {
-//			System.out.println(ie + "\t3");
-//		}
-//		catch (IllegalAccessException iae) {
-//			System.out.println(iae + "\t4");
-//		}
+		}
 		
 	} // end main
 } // end DBTester

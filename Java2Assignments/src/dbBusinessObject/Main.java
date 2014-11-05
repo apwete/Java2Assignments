@@ -15,11 +15,24 @@ package dbBusinessObject;
 public class Main {
 
 	public static void main(String[] args) {
-		Student student = new Student();
+		Student student;
 		
-		student.setCity("sldjhf");
-		student.getCity();
-		student.toString();
-		System.out.println("Running");
+		student = new Student();
+		//Test Select
+		student.selectDB(1);
+		student.display();
+		//Test Insert
+		student.insertDB(35, "LLL", "MMM", "NNN", "OOO", "PPP", "QQQ", 999, 4);
+		student.selectDB(35);
+		student.display();
+		//Test Update
+		student.selectDB(35);
+		student.setFirstName("Billy");
+		student.updateDB();
+		//Test Delete
+		student.selectDB(35);
+		student.deleteDB();
+		student.display();
+		
 	} // end main class
 } // end Main class

@@ -1,4 +1,4 @@
-package dbBusinessObject;
+package dbWithGUI;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
