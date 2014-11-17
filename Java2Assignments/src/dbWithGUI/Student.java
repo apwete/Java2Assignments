@@ -11,15 +11,17 @@ import java.sql.Statement;
  * @Term: Fall 2014 														*
  * @Lab:  9																	*
  * @author: William M. Driver 												*
- * @date: 10/22/2014 														*
+ * @date: 11/11/2014 														*
  * @Description: DB Student Object 											*
  *  																		*
  * @version: 1.0 															* 
- * @update: 																*
+ * @update: v: 1.1 - housekeeping											*
+ * 			v. 1.2 - Add DB connections to button listeners, Student Object	* 
+ * 					 and inputs for address									*
  ****************************************************************************/
 
 public class Student {
-	// ******** Properties *************
+	/******** 			Behaviors			****************/
 	int sid;
 	String sfn;
 	String sln;
@@ -30,7 +32,7 @@ public class Student {
 	int szip;
 	int sgpa;
 	
-	// ******* 			Constructors		****************
+	/******** 			Constructors		 ***************/
 	Student() {
 
 	} // end Student(no args) constructor
@@ -46,9 +48,7 @@ public class Student {
 		semail = email;
 		sgpa = gpa;
 	} // end Student(all args) constructor
-	
-	
-	// *******			 SelectDB			 ***************
+	/*********			 SelectDB			 ***************/
 	protected void selectDB(int sid){
 		try{
 			Connection conn = null;
@@ -79,8 +79,7 @@ public class Student {
 			System.out.println(sql + "\t2");	
 		}
 	}
-	
-	// *******			 UpdateDB			 ***************
+	/*********			 UpdateDB			 ***************/
 	protected void updateDB(){
 		try{
 			Connection conn = null;
@@ -114,7 +113,7 @@ public class Student {
 			System.out.println(sql + "\t2");	
 		}
 	}
-	// *******			 InsertDB			 ***************
+	/*********			 InsertDB			 ***************/
 	protected void insertDB(int id, String fn, String ln, String street, String city, 
 			String state, String email, int zip, int gpa){
 		sid = id;
@@ -153,7 +152,7 @@ public class Student {
 			System.out.println(sql + "\t2");	
 		}
 	}
-	// *******			 DeleteDB			 ***************
+	/*********			 DeleteDB			 ***************/
 	protected void deleteDB(){
 		try{
 			Connection conn = null;
@@ -180,7 +179,7 @@ public class Student {
 			System.out.println(sql + "\t2");	
 		}
 	}
-	// *******			 Display			 ***************
+	/*********			 Display			 ***************/
 	protected void display(){
 		System.out.println("ID: " + getID());
 		System.out.println("First Name: " + getFirstName());
@@ -190,9 +189,8 @@ public class Student {
 		System.out.println("Email: "+ getEmail());
 		System.out.println("GPA: " + getGPA());
 	}
-	
 
-	// ******** getters and setters *****
+	/********* 		getters and setters		 ***************/
 	private int getID() {
 		return sid;
 	}
@@ -262,7 +260,7 @@ public class Student {
 	} // end setGPA
 
 	public String toString() {
-		return "Need to finish toString()";
+		return "No string here.";
 	} // end toString
 	
 } // end Student class
