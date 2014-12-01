@@ -1,0 +1,63 @@
+CIST 2372
+Java Programming II
+LAB #9 – 30 Points
+DB Access
+Fall  Semester 2014
+
+ In this lab, you will be working with Business Objects and DBs. 
+
+1.)	Create a class called Student.  This class will not be tied to the Database, 
+yet.  The Student class should have the same properties as the Database table:  
+SID, FirstName, LastName, etc.   Include all the set and get functions as 
+needed.  Include 2 constructors, an empty constructor, and one that takes all 
+properties. Include a display() method that prints out all properties. Use a 
+main to instantiate and test out this Student class. (Hint: No database calls in
+this class, yet.)
+
+Testing Code in Main() method →
+
+Student  s = new Student(4,”Frank”, “Jones”, “123 Main”, “Atlanta”, “GA”, 30133, 
+“fj@yahoo.com”, 3.2);
+
+s.display();
+
+
+2.)	Modify 1.) from above.  Add a new Method called selectDB() that takes only 
+one argument, SID.  When a user calls this method, it should SELECT from the 
+database that Student and get all the Student’s data from the database, and put 
+this data into the appropriate properties.  (Hint: You will use an SQL Select 
+statement here.)  Test out this method in the main. 
+
+Testing Code in Main() method →
+
+Student  s1 = new Student();  
+s1.selectDB(4);     //accessing DB
+s1.display();          //displays all data from DB for student with id=4
+
+3.)	Modify 2.) from above.  This time we are add another method called 
+insertDB().  This method will take all 9 data elements as arguments.  This 
+method will then Insert this information into the Student table, as well as 
+fill up the object with the data provided.  (Hint: You will use an SQL Insert 
+statement here.)   
+  
+Testing Code in Main() method →
+
+Student s2=new Student();
+
+s2.insertDB(33, “Frank”, “Mayes”, “123 Main street”, “Atlanta”, “GA”, 30100, 
+"fmayes@yahoo.com”,3.3f);
+
+s2.display();
+
+4.)	Lastly add 2 functions to Update and Delete student information.
+
+Testing Code in Main() method →
+
+Student s3 = new Student();
+s3.find(6);
+s3.deleteDB();
+And
+Student s4 = new Student ();
+s4.find(7);
+s4.setZipcode(30106);
+s4.updateDB();

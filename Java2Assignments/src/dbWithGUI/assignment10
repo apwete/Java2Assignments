@@ -1,0 +1,26 @@
+CIST 2372
+Java Programming II
+LAB #10
+Student Class & GUI – 30 Points
+Fall Semester 2014
+ 
+ 
+ In this lab, you will be working with Business Objects and GUIs.
+
+
+A.)	Recall the Student class that you built in Lab #9(Student.java).   You will 
+be using this class to access the Database.  Also recall the StudentGUI class 
+that you built in Lab #2(StudentGUI.java).
+
+B.)	Your task for this lab is to make a student’s data(name, email, gpa) show up 
+in the StudentGUI.  
+C.)	The user will run the StudentGUI class, and the GUI will show up.  The User 
+will then enter a student ID number in the ID textfield and click the Find 
+button.  Your event code will read the ID number the user entered, use that ID 
+number and the Student Business Object to retrieve that one student’s data from 
+the DB(selectDB()).  Lastly, pull out the individual data elements 
+(i.e firstName) from the Student Business Object and put them into the 
+appropriate textfields in the StudentGUI.
+
+
+Also make the “Insert”, “Delete” and “Update” buttons work. Have fun.

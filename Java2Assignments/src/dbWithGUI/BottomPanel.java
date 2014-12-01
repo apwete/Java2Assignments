@@ -24,6 +24,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class BottomPanel extends JPanel implements ActionListener{
+	/************************** Behaviors *******************************/
 	private JButton find = new JButton("Find");
 	private JButton insert = new JButton("Insert");
 	private JButton delete = new JButton("Delete");
