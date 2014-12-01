@@ -1,0 +1,27 @@
+CIST 2372
+Java Programming II
+LAB #11 – 30 points
+Sockets
+Fall Semester 2014
+
+
+ In this lab, you will be working with Sockets.
+
+
+1.)	Sending a String:  Build 2 classes,  one A Server(ServerString.java) that 
+sends a single String message and the second, a Client(ClientString.java) that 
+receives the message and prints it to the Console.  No GUI programming is needed.
+Have these 2 classes work in separate DOS windows. You will need 2 DOS Windows 
+to test these classes out.  Run the Server first in one DOS Window, then run the 
+Client in the Second DOS Window.  At first, run the 2 classes on the same 
+machine.  After you get them working on one machine, you may want to try to run 
+the classes on 2 different machines.
+
+2.)	Sending Integers:  Build 2 classes,  one A Client(ClientInt.java) that sends 
+say 5 integers;  the second, a Server(ServerInt.java) that receives the integers 
+and prints them to the Console.  The Server should continue to read data from 
+the Client until it reads a 0(zero) from the Client.  Have these 2 classes work 
+in DOS windows. You will need 2 DOS Windows to test these classes out.  Run the 
+Server first in one DOS Window, then run the Client in the Second DOS Window.  
+At first, run the 2 classes on the same machine.  After you get them working on 
+one machine, you may want to try to run the classes on 2 different machines.

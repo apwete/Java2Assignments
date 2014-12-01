@@ -1,0 +1,50 @@
+CIST 2372
+Java Programming II
+LAB #12
+RMI – 30 Points
+Fall Semester 2014
+ 
+ 
+
+ In this lab, you will be working with RMI.
+
+Go through all of the STEPS necessary to implement the simple RMI Message 
+program we discussed in class.
+
+
+
+
+
+
+Using RMI in Java
+Steps:
+
+1.)	Open an Editor, like NotePad++, and type in the the 3 parts of the Simple 
+RMI Project; → the Message Interface, the ServerMessage and the ClientMessage.  
+
+2.)	Open 2 DOS Windows on your PC (One window is for the Server and one window 
+is for the Client)
+
+	a.	In the Server Window, do the following:
+		•	Compile the Message.java file.
+		•	Compile the ServerMessage.java file.
+		•	Type: “start rmiregistry” (This starts the rmiregistry in a new DOS 
+			Window.)
+		•	Type: “rmic ServerMessage” (This creates the ‘stub’ file that is 
+			needed to communicate to the Client.)
+		•	Run the ServerMessage class, type :    “java ServerMessage”
+
+	b.	In the Client Window, do the following:
+		•	Compile the ClientMessage file.
+		•	Run the ClientMessage java class, type: “java ClientMessage”.
+
+3.)	To run the Client on a separate machine do the following → 
+
+	a.	Copy the following 3 files to the second machine:  Message.class, and 
+		the MessageServer_stub.class and the ClientMessage.java.  
+	b.	Open a DOS Window on the Second machine.
+	c.	Edit the ClientMessage.java file, change ‘localhost’ to the name of the 
+		machine where the Server is.
+	d.	Compile the ClientMessage.java file.
+	e.	Run the ClientMessage java class, type: “java ClientMessage”.
+
